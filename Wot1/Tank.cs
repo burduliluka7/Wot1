@@ -37,8 +37,9 @@ namespace ConsoleApp2
         public string GetInfo()
         {
 
-            string result = JsonConvert.SerializeObject(new { TankName, Penetr, Dmg, Health });
-            return result + "\n" + Arm;
+             string result = JsonConvert.SerializeObject(new { TankName, Penetr, Dmg, Health });
+             return result+ "\n" + Arm;
+            
         }
         public string MakeShot(Tank enemytank, int i, int j)
         {
